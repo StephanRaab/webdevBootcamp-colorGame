@@ -1,0 +1,39 @@
+body {
+	background: #232323;
+	font-family: sans-serif;
+}
+
+h1 {
+	color: #fff;
+}
+
+span {
+	color: #fff;
+}
+
+nav {
+	color: #fff;
+}
+
+nav ul li {
+	text-decoration:  none;
+	list-style:  none;
+}
+
+#squareContainer {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.square {
+	width: 30%;
+	padding-bottom: 30%;
+	float: left;
+	border-radius: 10px;
+	margin: 1.66%;
+}
+
+.square:hover {
+	cursor: pointer;
+	transition: .25s ease-in-out;
+}
