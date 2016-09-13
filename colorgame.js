@@ -8,6 +8,7 @@
 	var resetButton = document.querySelector("#resetGame");
 	var easyBtn = document.querySelector('#easyButton');
 	var hardBtn = document.querySelector('#hardButton');
+	var numberOfSquares = 6;
 
 	easyBtn.addEventListener("click", function(){
 		easyBtn.classList.add("selectedButton");
