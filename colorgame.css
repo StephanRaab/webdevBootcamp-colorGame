@@ -16,6 +16,14 @@ nav ul li {
 	list-style:  none;
 }
 
+button {
+	border: none;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
 #squareContainer {
 	max-width: 600px;
 	margin: 0 auto;
@@ -39,4 +47,9 @@ nav ul li {
 	height: 30px;
 	text-align: center;
 	color: #000;
+}
+
+.selectedButton {
+	background: #82b621;
+	color: #FFF;
 }

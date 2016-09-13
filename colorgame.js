@@ -6,6 +6,35 @@
 	var messageDisplay = document.querySelector("#message");
 	var h1 = document.querySelector("h1");
 	var resetButton = document.querySelector("#resetGame");
+	var easyBtn = document.querySelector('#easyButton');
+	var hardBtn = document.querySelector('#hardButton');
+
+	easyBtn.addEventListener("click", function(){
+		easyBtn.classList.add("selectedButton");
+		hardBtn.classList.remove("selectedButton");
+		colors = generateRandomColors(3);
+		pickedColor = pickColor();
+		colorDisplay.textContent = pickedColor;
+		for (var i = 0; i < squares.length; i++) {
+			if (colors[i]) {
+				squares[i].style.background = colors[i];
+			} else {
+				squares[i].style.display = "none";
+			}
+		}
+	})
+
+	hardBtn.addEventListener("click", function(){
+		hardBtn.classList.add("selectedButton");
+		easyBtn.classList.remove("selectedButton");
+		colors = generateRandomColors(6);
+		pickedColor = pickColor();
+		colorDisplay.textContent = pickedColor;
+		for (var i = 0; i < squares.length; i++) {
+					squares[i].style.background = colors[i];
+					squares[i].style.display = "block";
+				}
+	})
 
 	colorDisplay.textContent = pickedColor;
 
