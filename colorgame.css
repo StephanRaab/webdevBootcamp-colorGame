@@ -34,6 +34,7 @@ button {
 	color: steelblue;
 	letter-spacing: 1px;
 	font-size: inherit;
+	outline: none;
 	transition: all ease-in-out 0.25s;
 	-webkit-transition: all ease-in-out 0.25s;
 	-moz-transition: all ease-in-out 0.25s;
